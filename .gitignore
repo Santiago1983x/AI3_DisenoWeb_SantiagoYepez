@@ -1,0 +1,20 @@
+# Archivos de configuracion privada
+.env
+.env.*
+
+# Dependencias
+/vendor/
+
+# Registros y archivos temporales
+*.log
+*.tmp
+/cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuracion de editores
+.vscode/
+.idea/

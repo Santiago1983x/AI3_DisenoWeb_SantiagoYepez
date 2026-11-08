@@ -1,7 +1,0 @@
-{
-    "livePreviewUseDevServer": true,
-    "livePreviewServerProjectPath": "/xampp",
-    "livePreviewHotReloadSupported": false,
-    "livePreviewFramework": "Custom",
-    "livePreviewServerURL": "http://localhost/Disenoweb_Santiago_Yepez/index.php"
-}
