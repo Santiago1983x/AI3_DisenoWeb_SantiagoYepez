@@ -1,0 +1,218 @@
+/* ==========================================
+   1. VARIABLES GLOBALES
+========================================== */
+
+:root {
+    --color-fondo: #f2f4f8;
+    --color-superficie: #ffffff;
+    --color-texto: #222222;
+    --color-principal: #0b3d6b;
+    --color-principal-hover: #09305a;
+    --color-borde: #bbbbbb;
+
+    --color-exito-fondo: #d9f2e0;
+    --color-exito-texto: #17612d;
+
+    --color-error-fondo: #fadbd8;
+    --color-error-texto: #8a1c10;
+
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --radio: 8px;
+    --transicion: 0.2s ease;
+}
+
+/* ==========================================
+   2. CONFIGURACION GENERAL
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-fondo);
+    margin: 0;
+    color: var(--color-texto);
+}
+
+/* ==========================================
+   3. CONTENEDOR PRINCIPAL
+========================================== */
+
+.contenedor {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+/* Variante más ancha para la tabla de inventario (listar.php) */
+.contenedor--ancho {
+    max-width: 1000px;
+}
+
+/* ==========================================
+   4. ENCABEZADO
+========================================== */
+
+.encabezado {
+    background: var(--color-principal);
+    color: var(--color-superficie);
+    padding: 20px 24px;
+    border-radius: var(--radio);
+    margin-bottom: 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+}
+
+.encabezado p {
+    margin: 0 0 12px;
+    opacity: 0.85;
+}
+
+/* ==========================================
+   5. MENU DE NAVEGACION
+========================================== */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu a {
+    color: var(--color-superficie);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   6. SECCION DEL FORMULARIO
+========================================== */
+
+.formulario-seccion {
+    background: var(--color-superficie);
+    padding: 24px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.formulario-seccion h2 {
+    margin-top: 0;
+    color: var(--color-principal);
+}
+
+/* ==========================================
+   7. CAMPOS DEL FORMULARIO
+========================================== */
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-texto);
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ==========================================
+   8. BOTONES
+========================================== */
+
+.boton {
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.boton--principal {
+    background: var(--color-principal);
+    color: var(--color-superficie);
+}
+
+.boton--principal:hover {
+    background: var(--color-principal-hover);
+}
+
+/* ==========================================
+   9. MENSAJES DE NOTIFICACION
+========================================== */
+
+.alerta {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.exito {
+    background: var(--color-exito-fondo);
+    color: var(--color-exito-texto);
+}
+
+.error {
+    background: var(--color-error-fondo);
+    color: var(--color-error-texto);
+}
+
+/* ==========================================
+   10. DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        padding: 16px 12px;
+    }
+
+    .encabezado {
+        padding: 18px;
+    }
+
+    .encabezado h1 {
+        font-size: 1.25rem;
+    }
+
+    .formulario-seccion {
+        padding: 18px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+}

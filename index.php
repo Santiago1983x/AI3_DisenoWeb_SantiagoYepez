@@ -16,7 +16,7 @@ unset($_SESSION['errores'], $_SESSION['exito']);
 
     <title>Sistema de Gestión de Inventario</title>
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
