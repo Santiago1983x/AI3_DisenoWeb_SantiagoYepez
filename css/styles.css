@@ -216,3 +216,94 @@ body {
     }
 
 }
+
+/* ==========================================
+   11. BUSCADOR
+========================================== */
+
+.buscador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buscador input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.buscador input:focus {
+    outline: 2px solid var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+.boton--secundario {
+    display: inline-block;
+    background: #e4e8ef;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.boton--secundario:hover {
+    background: #d5dae3;
+}
+
+/* ==========================================
+   12. TABLA DE PRODUCTOS
+========================================== */
+
+.resumen {
+    margin: 0 0 12px;
+    color: #555555;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e1e5ec;
+}
+
+.tabla thead th {
+    background: var(--color-principal);
+    color: var(--color-superficie);
+}
+
+.tabla tbody tr:nth-child(even) {
+    background: #f7f9fc;
+}
+
+.tabla tbody tr:hover {
+    background: #eaf1f8;
+}
+
+.tabla .numero {
+    text-align: right;
+}
+
+.stock-bajo {
+    color: var(--color-error-texto);
+    font-weight: bold;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 24px;
+    color: #555555;
+}
